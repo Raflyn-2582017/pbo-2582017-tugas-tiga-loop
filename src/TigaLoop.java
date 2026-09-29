@@ -36,6 +36,17 @@ public class TigaLoop {
 
         System.out.println();
 
+        // Bukti off-by-one: i < n vs i <= n
+        int kurang = 0;
+        for (int i = 1; i < n; i++) {
+            kurang++;
+        }
+        int kurangSama = 0;
+        for (int i = 1; i <= n; i++) {
+            kurangSama++;
+        }
+        System.out.println("1 < n berputar : " + kurang + " kali");
+        System.out.println("1 <= n berputar : " + kurangSama + " kali");
 
     }
 }
