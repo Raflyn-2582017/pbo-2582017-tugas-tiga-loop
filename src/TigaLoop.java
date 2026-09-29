@@ -48,5 +48,22 @@ public class TigaLoop {
         System.out.println("1 < n berputar : " + kurang + " kali");
         System.out.println("1 <= n berputar : " + kurangSama + " kali");
 
+        // Saringan angka tetap 1-10 (tidak ikut n)
+        int tercetak = 0;
+        System.out.print("Disaring :");
+        for (int i = 1; i <= 10; i++) {
+            if (i % 2 == 0) {
+                continue;       // lewati angka genap
+            }
+            if (i > 7) {
+                break;          // berhenti kalau i > 7
+            }
+            System.out.print(" " + i);
+            tercetak++;
+        }
+        System.out.println();
+        System.out.println("Sampai println : " + tercetak + " kali");
+
+
     }
 }
